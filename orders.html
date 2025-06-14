@@ -21,8 +21,7 @@
       margin: 0;
       font-size: 2em;
     }
-    header p {
-      margin-top: 0.3em;
+    header p {      margin-top: 0.3em;
       font-size: 1.1em;
       font-weight: 300;
     }
@@ -92,12 +91,19 @@
 
   <section>
     <h2>Order Now</h2>
-    <form id="orderForm">
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Email Address" required />
-      <input type="number" placeholder="Quantity" required />
-      <textarea placeholder="Additional Notes (Optional)"></textarea>
-      <button type="submit">Place Order</button>
+    <form action="https://formsubmit.co/charcofresh.co@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email Address" required />
+            <input type="number" name="quantity" placeholder="Quantity" required />
+              <textarea name="message" placeholder="Additional Notes (Optional)"></textarea>
+
+                <!-- This makes sure you are not spammed -->
+                  <input type="hidden" name="_captcha" value="false">
+
+                    <!-- This is the message shown after submitting -->
+                      <input type="hidden" name="_next" value="https://charcofresh.github.io/CharcoFresh-/thankyou.html">
+
+                        <button type="submit">Place Order</button>
     </form>
     <p id="confirmation">Thank you! We'll get in touch soon via charcofresh.co@gmail.com.</p>
   </section>
