@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subscribe - CharcoFresh</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 30px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background: #000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #444;
+    }
+  </style>
+</head>
+<body>
+  <h1>Subscribe for Product Dropouts</h1>
+  <p>Enter your email to get updates about CharcoFresh launches.</p>
+
+  <form action="https://formsubmit.co/charcofresh.co@gmail.com" method="POST">
+    <input type="email" name="email" placeholder="Enter your email" required />
+    
+    <!-- Hidden input to send a custom message -->
+    <input type="hidden" name="_subject" value="Thanks for subscribing to CharcoFresh!" />
+    <input type="hidden" name="_autoresponse" value="Thank you for subscribing! You will be receiving updates about our product dropout here.">
+    
+    <button type="submit">Subscribe</button>
+  </form>
+</body>
+</html>
